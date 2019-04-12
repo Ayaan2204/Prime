@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int a;
+    int i;
+    int j;
+    int k=0;
+    printf("ENTER NUMBER \n");
+    scanf("%d",&a);
+    printf("Prime numbers upto %d are : \n",a);
+    for(i=2;i<=a;i++)
+    {
+        for(j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                k=1;
+            }
+        }
+        if(k==0)
+        {
+            printf("%d \n",i);
+        }
