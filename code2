@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+
+void main ()
+{
+  int n;
+  int i;
+  int a;
+  int flag = 0;
+  int testnumber = 2;
+  int divisor;
+
+
+
+  printf ("ENTER NUMBER\n");
+  scanf ("%d", &n);
+  for (i = 0; i < n; i++)
+    {
+        do
+        {
+            flag=0;
+            for(divisor=2;divisor<testnumber;divisor++)
+            {
+                if(testnumber%divisor==0)
+                {
+                    flag=1;
+                }
+            }
+            if(flag==1)
+            {
+                testnumber++;
+            }
+            
+        }while(flag==1);
+        printf("%d\n",testnumber);
+
+       testnumber++;
+       
+    }
+
+}
